@@ -11,6 +11,11 @@ function greeter(student : Student) {
     return student.firstName + " " + student.lastName + " is a " + student.occupation;
 }
 
-let user = new Student("Sholom", "D.", "Aber", "Developer")
+var personFirstName = prompt("Please enter your first name");
+var personMiddleInitial = prompt("Please enter your middle initial");
+var personLastName = prompt("Please enter your last name");
+var personOccupation = prompt("Please enter your occupation");
+
+let user = new Student(personFirstName, personMiddleInitial, personLastName, personOccupation)
 
 document.body.innerHTML = greeter(user);
